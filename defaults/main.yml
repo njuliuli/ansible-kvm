@@ -41,12 +41,10 @@ kvm_config_virtual_networks: false
 kvm_config_storage_pools: false
 
 kvm_debian_packages:
-  - "bridge-utils"
-  - "libvirt-bin"
-  - "lldpd"
-  - "python-libvirt"
-  - "python-lxml"
-  - "qemu-kvm"
+  - qemu-kvm
+  - libvirt-clients
+  - qemu-utils
+  - libvirt-daemon-system
 
 # Disable apparmor
 kvm_disable_apparmor: false
